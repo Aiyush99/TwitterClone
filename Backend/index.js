@@ -6,7 +6,7 @@ import userRoutes from './routes/userRoutes.js'
 import tweetRoutes from './routes/tweetRoutes.js'
 import cors from 'cors'
 
-const functions = require("firebase-functions")
+
 
 const app = express();
 databaseConnection();

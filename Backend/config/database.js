@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 dotenv.config({
     path:"./.env"
 })
-const monoUrl = process.env.MONGO_URL;
+const monoUrl = "mongodb+srv://Aiyush:preksha@cluster0.gkrk0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 const databaseConnection = ()=>{
     mongoose.connect(monoUrl).then(()=>{

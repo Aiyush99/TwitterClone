@@ -35,4 +35,4 @@ app.listen(process.env.PORT,()=>{
     console.log(`Example app listening on port ${process.env.PORT}`)
 })
 
-exports.api = functions.https.onRequest(app)
+

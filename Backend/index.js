@@ -1,5 +1,5 @@
 import express, { urlencoded } from 'express'
-import dotenv from 'dotenv'
+
 import databaseConnection from './config/database.js';
 import cookieParser from 'cookie-parser';
 import userRoutes from './routes/userRoutes.js'
@@ -7,9 +7,7 @@ import tweetRoutes from './routes/tweetRoutes.js'
 import cors from 'cors'
 
 const functions = require("firebase-functions")
-dotenv.config({
-    path:".env"
-})
+
 const app = express();
 databaseConnection();
 
